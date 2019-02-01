@@ -184,4 +184,4 @@ This project is licensed under TDG's License - visit http://www.tdg-seville.info
 
 ## Acknowledgments
  * Special thanks to [Dr. Rafael Corchuelo](http://www.tdg-seville.info/corchu/Home)
- * Spanish R&D programme (grants TIN2013-40848-R and TIN2013-40848-R)
+ * Spanish R&D programme (grants TIN2013-40848-R and TIN2016-75394-R)
