@@ -17,9 +17,9 @@ To build the previous executables first download this project and open it into y
 
 ## Running an example
 
-We have inlcuded a scenario to ilustrate how Sorbas can be run, the scenarios is 'Restaurants'. Other scenarios ready to run can be found [here]()
+We have inlcuded a scenario this readme to ilustrate how Sorbas can be run, the scenarios is 'Restaurants'. All scenarios ready to run can be found [here](https://zenodo.org/record/2555034#.XFgFjc9Khz8)
 
-To run this example just type in your console
+To run this example download the restaurants.zip, move to the training directory and just type in your console
 
 ```
 java -jar sorbasRL.jar restaurants-input.json 0.01 0.01
@@ -44,11 +44,15 @@ Where best_d_threshold is the best gamma threshold selected from do-optimisation
 
 ### Linking
 
-To link two datasets use sorbas with the output of sorbasRL.jar, which will be the file called \*-filtered.json as follows
+To link two datasets use sorbas with the output of sorbasRL.jar, which will be the file called \*-filtered.json as follows. Move to the valication directory in the restaurants scenario and type the following:
 
 ```
 java -jar sorbas.jar restaurants-input.json best_o_threshold best_d_threshold
 ```
+
+### Checking results
+
+After the execution of sorbasRL.jar and sorbas.jar a file will be created in the output folder, i.e., restaurants in our case, the file named effectiveness.csv contain the effectiveness of the basic rule (learnt with any state-of-the-art proposal) and the effectiveness of the sorbas learnt rule. In addition, to check the execution time there is a file named log that contains the trace of the execution, including the time required to learn or apply context-aware link rules
 
 ## Inputs
 
